@@ -14,6 +14,10 @@
 		57226F4E1E892B7200C2BB22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57226F4C1E892B7200C2BB22 /* LaunchScreen.storyboard */; };
 		57226F591E892B7200C2BB22 /* SwiftWithOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57226F581E892B7200C2BB22 /* SwiftWithOCTests.swift */; };
 		57226F641E892B7200C2BB22 /* SwiftWithOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57226F631E892B7200C2BB22 /* SwiftWithOCUITests.swift */; };
+		57226F721E892BCB00C2BB22 /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57226F711E892BCB00C2BB22 /* SwiftClass.swift */; };
+		57226F7C1E892C5600C2BB22 /* ObjcClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 57226F7B1E892C5600C2BB22 /* ObjcClass.m */; };
+		57226F801E892E1300C2BB22 /* CClass1.c in Sources */ = {isa = PBXBuildFile; fileRef = 57226F7E1E892E1300C2BB22 /* CClass1.c */; };
+		57226F821E892E1D00C2BB22 /* CClass2.c in Sources */ = {isa = PBXBuildFile; fileRef = 57226F811E892E1D00C2BB22 /* CClass2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,13 @@
 		57226F5F1E892B7200C2BB22 /* SwiftWithOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWithOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57226F631E892B7200C2BB22 /* SwiftWithOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWithOCUITests.swift; sourceTree = "<group>"; };
 		57226F651E892B7200C2BB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57226F711E892BCB00C2BB22 /* SwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
+		57226F7A1E892C5600C2BB22 /* ObjcClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcClass.h; sourceTree = "<group>"; };
+		57226F7B1E892C5600C2BB22 /* ObjcClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcClass.m; sourceTree = "<group>"; };
+		57226F7D1E892CD200C2BB22 /* SwiftToObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftToObjc.h; sourceTree = "<group>"; };
+		57226F7E1E892E1300C2BB22 /* CClass1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CClass1.c; sourceTree = "<group>"; };
+		57226F7F1E892E1300C2BB22 /* CClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CClass1.h; sourceTree = "<group>"; };
+		57226F811E892E1D00C2BB22 /* CClass2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CClass2.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +110,17 @@
 			children = (
 				57226F431E892B7200C2BB22 /* AppDelegate.swift */,
 				57226F451E892B7200C2BB22 /* ViewController.swift */,
+				57226F711E892BCB00C2BB22 /* SwiftClass.swift */,
 				57226F471E892B7200C2BB22 /* Main.storyboard */,
 				57226F4A1E892B7200C2BB22 /* Assets.xcassets */,
 				57226F4C1E892B7200C2BB22 /* LaunchScreen.storyboard */,
 				57226F4F1E892B7200C2BB22 /* Info.plist */,
+				57226F7A1E892C5600C2BB22 /* ObjcClass.h */,
+				57226F7D1E892CD200C2BB22 /* SwiftToObjc.h */,
+				57226F7B1E892C5600C2BB22 /* ObjcClass.m */,
+				57226F7E1E892E1300C2BB22 /* CClass1.c */,
+				57226F7F1E892E1300C2BB22 /* CClass1.h */,
+				57226F811E892E1D00C2BB22 /* CClass2.c */,
 			);
 			path = SwiftWithOC;
 			sourceTree = "<group>";
@@ -193,6 +211,7 @@
 				TargetAttributes = {
 					57226F3F1E892B7200C2BB22 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					57226F531E892B7200C2BB22 = {
@@ -261,6 +280,10 @@
 			files = (
 				57226F461E892B7200C2BB22 /* ViewController.swift in Sources */,
 				57226F441E892B7200C2BB22 /* AppDelegate.swift in Sources */,
+				57226F7C1E892C5600C2BB22 /* ObjcClass.m in Sources */,
+				57226F821E892E1D00C2BB22 /* CClass2.c in Sources */,
+				57226F801E892E1300C2BB22 /* CClass1.c in Sources */,
+				57226F721E892BCB00C2BB22 /* SwiftClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftWithOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluto.SwiftWithOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftWithOC/SwiftToObjc.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +450,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftWithOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluto.SwiftWithOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftWithOC/SwiftToObjc.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
