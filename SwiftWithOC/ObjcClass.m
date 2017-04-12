@@ -7,8 +7,7 @@
 //
 
 #import "ObjcClass.h"
-
-#import "SwiftWithOC-swift.h"
+#import "SwiftWithOC-Swift.h"
 
 @implementation ObjcClass
 
